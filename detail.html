@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="vendor/fontawesome/css/all.min.css" rel="stylesheet"/>
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/style.css" rel="stylesheet"/>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header class="header-stuck">
+		<div class="header-all">
+			<div class="fixed">
+			<div class="top row">
+				<div class="col-4">
+				<a href="">
+					<p> NHẬP MÃ <span style="color:red">BLACKFRIDAY</span> ĐỂ GIẢM 10% </p>
+				</a>
+				</div>
+				<div class="col-4 text-center">
+					<a href=""><i  class="fa fa-clock" style="font-size:16px;color:gray"></i> 08:00 - 17:00</a>
+					<a href="tel:0889644529"><i  class="fa fa-phone" style="font-size:16px;color:gray"></i> 0889644529</a>
+				</div>
+				<div class="col-4 text-right">
+					<a href="https://www.facebook.com/hoang.cuong.90857901" target="_blank"><i  class="social fab fa-facebook-square" style="font-size:16px;"></i></a>
+					<a href="" target="_blank"><i  class="social fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCEcrYZpKtZ56O52czlZLMFA" target="_blank"><i  class="social fab fa-youtube"></i></a>
+				</div>			
+			</div>
+			<div class="header-main row">
+				<div id="logo" class="col-3 logo" >
+					<a href="index.html"><img src="img/LOGO3.png" /></a>
+				</div>
+				<div  class="col-6 text-center">
+					<div id ="search" class="search-container">
+						<form action="/action_page.php">
+						  <input type="text" placeholder="Tìm sách.." name="search">
+						  <button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+				<div  class="col-2" style="display:inline-flex;">
+						<div class="row">
+							<div class="login">
+								<div id="dangnhap">
+									<p><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Đăng nhập</button><p>
+
+									<div id="id01" class="modal">
+									  
+									  <form class="modal-content animate" action="index.html"  method="post">
+										<div class="imgcontainer">
+										  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+										  <img src="img/LOGIN.png" alt="Avatar" class="avatar">
+										</div>
+
+										<div class="container">
+										  <label for="uname"><b>Tên người dùng</b></label>
+										  <input type="text" placeholder="Nhập họ tên" name="uname" required>
+
+										  <label for="psw"><b>Mật khẩu</b></label>
+										  <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+											
+										<button type="submit">ĐĂNG NHẬP</button></a>
+										  <label>
+											<input type="checkbox" checked="checked" name="remember">Nhớ mật khẩu
+										  </label>
+										</div>
+
+										<div class="container" style="background-color:#f1f1f1">
+										  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Không</button>
+										  <span class="psw">Quên <a href="#">Mật khẩu?</a></span>
+										</div>
+									  </form>
+									</div>
+
+									<script>
+									var modal = document.getElementById('id01');
+									window.onclick = function(event) {
+										if (event.target == modal) {
+											modal.style.display = "none";
+										}
+									}
+									</script>
+								</div>
+							</div>
+							<div  class="logout">
+								<div id="dangxuat">
+									<a href="signup.html">Đăng ký</a>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="flex-row container">
+					<div class=" flex-col flex-center">
+						<ul class="nav nav-spacing">
+							<li><a href="index.html" ><i class="fa fa-home"></i> Trang chủ</a></li>
+							<li class="dropdown">
+								<a href="thieunhi.html"  class="dropbtn">Sách thiếu nhi
+									<i class="fa fa-angle-down">
+									</i>
+									<div class ="drop-content">
+										<a href="#">Truyện tranh </a>
+										<a href="#">Sách thiếu nhi</a>
+										<a href="#">Sách luyện viết</a>
+										<a href="#">Vui vào lớp 1</a>
+									</div>
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="teen.html" class="dropbtn">Sách teen
+										<i class="fa fa-angle-down"></i>
+										<div class="drop-content">
+											<a href="#">Giới tính</a>
+											<a href="#">Dậy thì</a>
+											<a href="#">Tâm lý</a>
+											<a href="#">Hướng nghiệp</a>
+										</div>
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="giaokhoa.html"  class="dropbtn">SÁCH GIÁO KHOA
+									<i class="fa fa-angle-down">
+									</i>
+									<div class="drop-content">
+										<a href="#">SGK phổ thông</a>
+										<a href="#">Sách tham khảo, luyện thi đại học</a>
+										<a href="#">Giáo khoa khác</a>
+									</div>	 	
+								</a>
+								
+							</li>
+							<li><a href="contact.html" >LIÊN HỆ</a><li>
+							<li><a href="">GIỎ HÀNG<i  class="fa fa-cart-plus"></i></a><li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</header>
+	<main>
+		<div class="contact-con" style="background:#efefef;padding-top: 10px;">
+			<div class="row-container"   style=" margin-left: 10px;">
+					<ol>
+						<li class="contact-home">				
+							<span class="home"><a href="index.html"><i style="color:#878087;font-size:20px" class="fa fa-home"></i>Trang chủ </a></span>
+						</li>
+						<li class="icon-fas">
+							<i style='font-size:15px;color:#878087' class='fas' > &#xf054;</i>
+							<span class="name-icon">Sách thiếu nhi </span>
+							<i style='font-size:15px;color:#878087' class='fas' > &#xf054;</i>
+							<span class="name-icon">Thám tử lừng danh conan </span>
+						</li>
+					</ol>
+			</div>
+		</div>
+		<hr>
+		<div class="box-price container">
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">						
+								<section class="box-image">
+								<div id="hiep" class="carousel slide" data-ride="carousel" data-interval="4000">
+								  <!-- Indicators -->	
+								  <ul class="carousel-indicators" >
+										<li data-target="#hiep" data-slide-to="0" class="active"><img src="img/book7.jpg"/></li>
+										<li data-target="#hiep" data-slide-to="1"><img src="img/conan1.jpg"/></li>
+										<li data-target="#hiep" data-slide-to="2"><img src="img/conan2.jpg"/></li>
+										<li data-target="#hiep" data-slide-to="3"><img src="img/conan3.jpg"/></li>
+										<li data-target="#hiep" data-slide-to="4"><img src="img/conan4.jpg"/></li>
+								  </ul>
+								  <!-- The slideshow -->
+								  <div class="carousel-inner">
+										<div class="carousel-item active">
+										  <img src="img/book7.jpg" style="width:100%"/>
+										</div>
+										<div class="carousel-item">
+										  <img src="img/conan1.jpg" style="width:100%"/>
+										</div>
+										<div class="carousel-item">
+										  <img src="img/conan2.jpg" style="width:100%"/>
+										</div>
+										<div class="carousel-item">
+										  <img src="img/conan3.jpg" style="width:100%"/>
+										</div>
+										<div class="carousel-item">
+										  <img src="img/conan4.jpg" style="width:100%"/>
+										</div>
+								  </div>
+								  <!-- Left and right controls -->
+								  <a class="carousel-control-prev" href="#hiep" data-slide="prev">
+									<span class="carousel-control-prev-icon"></span>
+								  </a>
+								  <a class="carousel-control-next" href="#hiep" data-slide="next">
+									<span class="carousel-control-next-icon"></span>
+								  </a>
+								</div>							
+							</section>
+						</div>
+						<div class="col-sm-6">
+							<h1 style="font-size: 30px; color: darkorange; font-family: emoji;">Thám tử lừng danh conan</h1>
+							<div class="gia" style="width:100%;display:flex">
+								<p style="text-decoration:line-through;text-decoration:line-through;color:red"> 1.040.000đ</p>
+								<p style="text-decoration:none;margin-left:10px; font-weight:bold;">870.000 đ </p> 					
+							</div>
+							<div class="noidung" >
+								<p style="font-weight: 300;"><i>Thám Tử Lừng Danh Conan (Detective Conan) nói về Thám tử trung học Kudo Shinichi trở thành một đứa trẻ sau khi bị Tổ chức Áo đen bắt uống thuốc độc APTX 4869. Hiện tại tên cậu là Edogawa Conan và đang sống với gia đình ông Mori. Cậu đã phá giải nhiều vụ án hằng ngày và đợi đánh bại Tổ chức Áo đen.</i></p>
+							</div>
+							<div class="them">
+								<p class="button"><button type="button" class="btn btn-warning"  style="margin-bottom: -14px;">Giỏ hàng</button></p>
+								<p class="button1"><button type="button" class="btn btn-primary">Mua ngay</button></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<section class="box-policy">
+						<h2 class="delivery"><i class="fas fa-truck"></i> Sản phẩm được miễn phí giao hàng</h2>
+						<p class="promotion">
+							<strong> Chính sách bán hàng</strong>
+						</p>
+						<ul class="info-policy">
+							<li><i class="far fa-check-circle"></i><i> Cam kết hàng chính hãng 100%</i></li>
+							<li><i class="fas fa-truck"></i><i> Đổi trả miễn phí trong 10 ngày</i></li>
+						</ul>
+						<hr>
+						<p class="promotion">
+							<strong> Phương thức vận chuyển</strong>
+						</p>
+						<ul class="info-policy">
+							<li><i class="fa fa-truck"></i><i> Giao hàng nhanh</i></li>
+							<li><i class="fas fa-truck"></i><i> Giao hàng tiết kiệm </i></li>
+							<li><i class="fa fa-plane"></i><i> Máy bay:))</i></li>
+						</ul>
+						
+					</section>
+				</div>				
+			</div>
+		</div>
+	</main>
+	<footer class="footer-row">
+		<div class="form-footer ">
+			<div class="container">
+				<div class="row-fluid">
+					<form class="form-inline" action="/action_page.php">
+					
+						<div class="news-letter form-group" id="tieude">
+							<label> ĐĂNG KÝ NHẬN EMAIL:</label>
+							<span><i>Đăng ký nhận thông tin sách mới</i></span>
+						</div>
+						<div class="input-group">
+							<input type="hidden" name="return_url" value="index.php">
+							<input type="text" class="input-name" placeholder="Tên của bạn"  id="name" name="input-name">
+							<input type="email" class="form-control" id="pwd" placeholder="Email của bạn" name="pwd">
+							<select class="select-name"  id="select">
+								<option value class="the-loai-yeu-thich">Thể loại yêu thích</option>
+								<option value="all">Tất cả</option>
+								<option value="123">Sách thiếu nhi </option>
+								<option value="321">Sách teen</option>
+								<option value="213">Sách giáo khoa</option>
+								<option value="000">Không có</option>
+							</select>
+							<button type="submit" class="btn btn-fault">Đồng ý</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>				
+		<div class="row-footer text-white pt-5 pb-5" style="background:#222">
+			<div class="col-sm-3">
+				<div class="pa1">
+					<span class="title">VỀ CÔNG TY</span>
+					<ul>
+						<li><a href="">Giới thiệu về công ty</a></li>
+						<li><a href="">Tuyển dụng</a></li>
+						<li><a href="">Góc báo chí</a></li>
+						<li><a href="">Chương trình đại lý</a></li>
+						<li><a href="">Chính sách bảo mật</a></li>
+						<li><a href="">Ứng dụng đọc ebook</a></li>
+						<li><a href="">Ứng dụng độc quyền</a></li>
+					</ul>
+				</div>
+			</div>				
+			<div class="col-sm-3">	
+				<div class="pa1">
+					<span class="title">TRỢ GIÚP</span>
+					<ul>
+						<li><a href="">Quy định sử dụng</a></li>
+						<li><a href="">Hướng dẫn mua hàng</a></li>
+						<li><a href="">Phương thức thanh toán</a></li>
+						<li><a href="">Phương thức vận chuyển</a></li>
+						<li><a href="">Các câu hỏi thường gặp</a></li>
+						<li><a href="">Yêu cầu của bạn</a></li>
+						<li><a href="">Bạn đang gặp khó khăn? </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-2">	
+				<div class="pa1">
+					<span class="title">TIN TỨC SÁCH </span>
+					<ul>
+						<li><a href="">Thông tin hàng tuần</a></li>
+						<li><a href="">Chân dung</a></li>
+						<li><a href="">Ý tưởng</a></li>
+						<li><a href="">Tác giả</a></li>
+						<li><a href="">Điểm sách</a></li>
+						<li><a href="">Phê bình</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-2">	
+				<div class="pa1">
+					<span class="title">THANH TOÁN</span>
+					<div class="ship">
+						<a href=""><img src="img\atm.jpg" /></a>
+						<a href=""><img src="img\cod.jpg" /></a>
+						<a href=""><img src="img\master_card.jpg" /></a>
+						<a href=""><img src="img\onepay.jpg" /></a>
+						<a href="" ><img src="img\visa.jpg" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2">	
+				<div class="pa1">
+					<span class="title">ĐỐI TÁC</span>
+					<div class="ship">
+						<a href=""><img src="img\lazada.jpg" /></a>
+						<a href=""><img src="img\shopee.jpg" /></a>
+						<a href=""><img src="img\amazon.jpg" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-footer2  pt-3 pb-3" style="background:#222;border-top:1px solid #ddd;font-size:14px;color:gray;">
+		    <p>© 2018. Công ty trách nhiệm hữu hạn HC.GPDKKD: 05968603  do sở KH & ĐT TP.HCM cấp ngày 15/06/2020 . GPMXH: 237/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 20/06/2021.<br />
+		   Địa chỉ: 204 Trần Phú, Phường 9, Quân 5,TP.Hồ Chí Minh. Điện thoại: 0889644529. Email: 0306201110@caothang.edu.vn. Chịu trách nhiệm nội dung: Hoàng Văn Cường .id:tiucuong</p>
+		</div>
+	</footer>
+</body>
